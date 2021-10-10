@@ -1,46 +1,45 @@
-# Getting Started with Create React App
+## Welcome to Manabie coding challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+*Hello!*
+*We're excited that you're interested in joining the Manabie. Below are the requirements and explanations for the challenge.*
 
-## Available Scripts
+### Notes: 
+- Our challenge codebase is based on create-react-app with typescript.
+- All provided codes are in this repository. Please fork, complete your challenge, and create a PR for us.
+- We judge your codes:
+    - Easy to understand.
+    - Well organized.
+    - Performance.
+    - Test cases.
+    - Your behavior when approach a new technology.
+- Dont worry if you cant complete the challenge in time. Just do your best in a mindful way.
+- If you can't fully complete the challenge , please note the completed features.
+    
+### Simple app diagram
+![App diagram](diagram.png)
 
-In the project directory, you can run:
+### Requirements
 
-### `yarn start`
+#### Common (required for both positions)
+- Our code base has some strange bugs and anti-patterns, please help us find and fix these (please comment the reasons why you change it).
+- Write some tests (prefer unit tests as it can save your time) to persuade us that what you had ADDED or FIXED are correct.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Front-end engineer
+- For front-end engineer, you can use localStorage instead of calling remote APIs.
+- We provided you a simple UI for todo app, please enhance it with your creative mind (We prefer not using any CSS framework as we want to see your CSS skills).
+- Please help split huge code blocks in App.tsx into reusable UI components.
+- Please help us add some features to the application by:
+    - Implement the persistent feature. After refreshing, our todos will be disappeared, that's annoying for our users, let's use localStorage (or API calls for fullstack engineer) to keep them.
+    - Implement the edit feature. Currently, users cannot edit the todos, please help them (user double-click the todo to edit, press enter to apply the changes, or click outside to discard).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### Fullstack engineer
+- You have to make sure your code satisfy the back-end requirements in https://github.com/manabie-com/togo.
+- We do not require you to enhance the UI, but it is preferable.
+- Done the common requirements above.
 
-### `yarn test`
+### How to run this code
+- Run ```yarn``` or ```npm install``` if this is the first time you clone this repo (`master` branch).
+- Run ```yarn start:fullstack``` in case you are doing a fullstack test, else run ```yarn start:frontend``` to start this project in development mode.
+- Sign in using username: `firstUser`, password: `example`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Last updated: 2021/08/01
